@@ -1,0 +1,282 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family:main;
+	src:url(Fonts/AsapCondensed-Regular.ttf)
+}
+
+@font-face {
+	font-family:texter;
+	src:url(Fonts/Bartina/Light.ttf);
+}
+body {
+	background-color: #252525;
+}
+
+
+header {
+	user-select: none;
+	font-family:main;
+	color:#000000;
+	font-size:36px;
+	background-color: #d3d3d3;
+	text-align:center;
+	box-shadow:2px 3px 8px;
+
+}
+
+main {
+	margin-left: 20%;
+	margin-right:20%;
+	min-height:100vh;
+	background-color: #da9132;
+}
+
+.vertical-menu {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	height:65px;
+	display:flex;
+	background-color:#181818;
+}
+
+.vertical-menu a {
+	font-size:30px;
+	color:#ff8800;
+	height:38px;
+}
+
+.menu-point h2 {
+	font-size:36px;
+	margin-inline-start: 280px;
+}
+
+.href-lk {
+	position: relative;
+	left:90%;
+}
+
+
+.user-form {
+	position:absolute;
+	left:40%;
+	top:40%;
+	display:flex;
+	width:390px;
+	height:360px;
+	border-radius:25px;
+	box-shadow: 7px 4px 16px;
+	background-color: #da9132;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items: center;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.user-form.reg {
+	height:450px;
+}
+
+.form-login h2 {
+	margin-left:10%;
+}
+
+.user-enter {
+	width:100%;
+	text-align: center;
+	font-size:42px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.input-user {
+	position:relative;
+	left:10%;
+	width:80%;
+	line-height:2em;
+	border-radius: 8px;
+	background-color: #e9e9e9;
+	color:#222020;
+	font-size:19px;
+}
+
+.input-user:autofill {
+	color:#000000;
+	background-color: #ffffff ; 
+	background-image: none !important;
+}
+
+
+
+.btn-user {
+	position:relative;
+	top:10px;
+	left:35%;
+	min-width:100px;
+	height: 35px;
+	background-color: #252525;
+	color:#ff9a03;
+	font-size:23px;
+	border-radius:12px;
+	box-shadow:1px 4px 16px;
+	font-weight: 900;
+}
+.btn-user.reg {
+	left:19%;
+}
+
+a {
+	font-size:20px;
+	color:black;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.error-message {
+	position:relative;
+	top:350px;
+	left:768px;
+	padding-top:12px;
+	text-align: center;
+	height:60px;
+	width:390px;
+	background:rgb(255, 29, 29);
+	font-size:17px;
+	font-weight:500;
+	font-family:texter;
+}
+
+
+/* Форма добавления задачи
+*/
+
+.header-task {
+	position:relative;
+	left:35%;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.task-form {
+	margin-left:20vw;
+	margin-right:20vw;
+	background-color:#da9132;
+	height: 100vh;
+}
+
+.form-task {
+	position:relative;
+	top:12.5%;
+	left:80px;
+	font-size:21px;
+	
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input-task {
+	position:relative;
+	background-color:#ffffff;
+	color:#202020;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	width:700px;
+	font-size: 22px;
+	line-height:1.5em;
+	margin-bottom:12px;
+}
+
+.label-description {
+	position: relative;
+	bottom:180px;
+}
+.input-task.descr {
+	left:75px;
+	height:350px;
+	width:700px;
+	overflow-x: scroll;
+	resize: none;
+}
+
+.input-task.deadline {
+	left:30px;
+}
+.btn-user.task {
+	left:440px;
+	top:130px;
+	width:200px;
+}
+
+/* Форма восстановления логина или пароля
+*/
+.recovery-header {
+	border-radius: 5px;
+	margin-top:15vh;
+	text-align: center;
+	background-color:#da9132;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.recovery-form {
+	border-radius: 12px;
+	box-shadow: 4px 8px 9px 4px;
+	margin-left:30vw;
+	margin-right:30vw;
+	background-color:#da9132;
+	min-height:50vh;
+}
+.input-user.recovery {
+	position:relative;
+	left:140px;
+	top:50px;
+	width:500px;
+	color:#000000;
+	background-color:#da9132;
+	font-size:22px;
+	font-family: texter;
+	margin-right:120px;
+}
+.input-user.recovery.email {
+	display:none;
+	top:68px;
+	background-color:#252424;
+	color:#eea405
+}
+
+input[type="radio"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-user.recovery {
+	left:15vw;
+	top:25vh;
+	width:200px;
+}
+
+.recovery-message {
+	position:relative;
+	top:20px;
+	left:20px;
+	color:#da9132;
+	font-size:20px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  .btn-user.auth {
+		left:15vw;
+		top:10vh;
+		width:340px;
+	}
+
+/* Вывод списка задач на экран
+*/
+.task {
+	font-size:30px;
+	display:inline;
+}
